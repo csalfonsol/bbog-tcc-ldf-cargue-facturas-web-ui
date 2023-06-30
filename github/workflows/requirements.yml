@@ -1,0 +1,21 @@
+name: requirements-frontend
+on:
+  pull_request:
+    branches:
+      - qa
+      - master
+      - staging
+      - feature/*
+
+jobs:
+  requirements-frontend:
+    uses: bancodebogota/bbog-dt-pipeline/.github/workflows/requirements_angular_frontend.yml@v0.1.52
+    with:
+      project-name: "bbog-tcc-ldf-cargue-facturas-web-ui"
+      project-key: "bbog-tcc-ldf-cargue-facturas-web-ui"
+      language: "javascript"
+      node-version: "14.x"
+      test-command: "npm run test:config"
+      sonar-project-properties-file: "sonar-project-custom.properties"
+      coverage-file: "coverage/lcov.info"
+    secrets: inherit
