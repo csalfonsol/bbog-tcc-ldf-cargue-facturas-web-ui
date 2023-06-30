@@ -1,0 +1,76 @@
+<div class="sherpa-grid">
+    <div class="sherpa-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+                <div class="succesBanner"> 
+                    <bdb-at-alert  
+                        *ngIf="showBanner"
+                        type="SUCCESS" 
+                        alert-title="¡Descargaste el archivo con éxito!"
+                        description="el archivo esta listo para enviar a nuestro proveedor LIBERA." 
+                        close-button=true
+                        (alertClosedEvent)="closeBannerDownloadFile($event)">
+                    </bdb-at-alert>
+                </div>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+                <div class="main">
+                    <div class="text-1" *ngIf="showText">
+                        <div class="sherpa-typography-body-2" >Fecha a procesar  {{ dateToday | date: 'dd/MM/yyyy'}}</div>
+                    </div>
+                    <div class="text-2" *ngIf="showText">
+                        <div class="sherpa-typography-heading-5">Archivo único de facturas</div>
+                    </div>
+                    <div class="text-3">
+                        <div class="sherpa-typography-body-1">Consolidamos la información en el siguiente documento:</div>
+                    </div>
+                
+                    <div class="componentLoadFile">
+                        <bdb-ml-upload    
+                            id="uploadComponent"  
+                            accept-files="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                            #upload
+                            (arrayFiles)="loadFile($event)"
+                            label-title="Archivo único de facturas para endosar"
+                            label-desc-one=""
+                            label-button="Cargar documentos"
+                            [listFiles]='[data]'
+                            is-disabled-btn-load>
+                        </bdb-ml-upload>
+                    </div>
+
+                    <div class="rectangle">
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                <div class='downloadButton'>
+                                    <button class='bdb-at-btn  bdb-at-btn--primary bdb-at-btn--lg '
+                                            (click)="donwloadLiberaFile()">Descargar<span>›</span></button>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                                <button  class='link-b bdb-at-btn  bdb-at-btn--link bdb-at-btn--lg ' (click)="goHome()">
+                                    <label>Volver al inicio</label>
+                                </button>
+                            </div>
+                    </div>
+
+                    <bdb-ml-modal #modal 
+                    is-close
+                        icon="information" 
+                        (buttonAlertClicked)="btnModal($event)"
+                        [titleModal]="titleModal"
+                        [subTitle]= "messageModal"
+                        options-buttons='[{"id":"0","value":"Si, continuar"}, {"id":"1","value":"No, cancelar"}]'> 
+                    </bdb-ml-modal>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>        
+
+
+
+
+        

@@ -1,0 +1,117 @@
+
+.content {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1184px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin-top: var(--sherpa-spacing-5);
+
+    .calendar {
+        width: 375px;
+    }
+
+    .text-1 {
+        font-stretch: normal;
+        font-style: normal;
+        margin-top: var(--sherpa-spacing-3);
+    }
+
+    .rectangle {
+        width: 768px;
+        height: 207px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+
+        .banner-toast {
+            position: absolute;
+            align-items: center;
+            margin: 0px;
+            margin-top: 17px;
+        }
+
+        .upload-comp{
+            margin: 0px;
+            padding: 0px;
+        }
+        .deleteFile {
+            position: relative;
+            width: 400px;
+            left: 784px;
+        }
+
+        .inputFileButton {
+            position: absolute;
+            bottom: 120px;
+            width: 400px;
+        }
+
+        .continueButton {                   
+            width: 245px;
+            height: 48px;
+            margin-top: 33px;
+        }
+    }
+}
+
+
+.text-body1{
+    margin: 0px;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    
+    letter-spacing: -0.0307692px;
+    
+    color: #5C5C5C;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.text-info1{
+    margin: 0px;
+    margin-top: var(--sherpa-spacing-8);
+    margin-bottom: var(--sherpa-spacing-2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: -0.0269231px;
+
+    color: #5C5C5C;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.title-1{
+    margin: 0px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height, or 117% */
+
+    letter-spacing: -0.0346154px;
+
+    /* Grises/Carbon-900 */
+
+    color: #333333;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}

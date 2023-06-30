@@ -1,0 +1,49 @@
+<div class="sherpa-grid">
+    <div class="sherpa-container">
+        <div class="row">        
+            <div class="content">
+                <div class="rectangle">
+                    <div class="banner-toast" *ngIf="errorLeter && !errorLeterDownloaded && !errorLeterDuple"><bdb-at-alert type="INFO" alert-title ="¡No olvides descargar la carta de errores!" 
+                        description="Después de su descarga, envíala a nuestros especialistas del producto. Es necesario eliminar la factura errada para continuar con la creación del archivo único. " close-button=true></bdb-at-alert></div>
+
+                    <div class="banner-toast" *ngIf="errorLeter && !errorLeterDownloaded && errorLeterDuple"><bdb-at-alert type="INFO" alert-title ="¡No olvides descargar la carta de facturas duplicadas!" 
+                        description="Después de su descarga, envíala a nuestros especialistas del producto. 
+                        Es necesario eliminar la facturas duplicadas para continuar con la creación del archivo único. " close-button=true></bdb-at-alert></div>
+                        
+                    <div class="banner-toast" *ngIf="errorLeter && errorLeterDownloaded && !errorLeterDuple"><bdb-at-alert type="SUCCESS" alert-title ="Descargaste satisfactoriamente la carta de errores" 
+                        description="Continua cargando más facturas, no olvides eliminar el documento errado para crear el archivo único. "
+                        close-button=true></bdb-at-alert></div>
+
+                    <div class="banner-toast" *ngIf="errorLeter && errorLeterDownloaded && errorLeterDuple"><bdb-at-alert type="SUCCESS" alert-title ="Descargaste satisfactoriamente la carta de facturas duplicadas" 
+                        description="Continua cargando más facturas, no olvides eliminar el documento errado para crear el archivo único. "
+                        close-button=true></bdb-at-alert></div>
+                    
+                    <p class="text-info1 sherpa-typography-body-2">Fecha a procesar {{dateToday | date: 'dd/MM/yyyy'}}</p> 
+                    <p class="title-1 sherpa-typography-heading-5 ">Cargar documentos</p>
+                    <p class="text-body1 sherpa-typography-body-1">Para comenzar, adjunta los archivos de facturas uno a uno:</p> 
+                
+                    <bdb-ml-upload     
+                            accept-files="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                            #upload
+                            (arrayFiles)="importFile($event)"
+                            label-title="Carga la facturas del cliente"
+                            label-desc-one="Puedes cargar hasta 20 archivos de facturas"
+                            label-button="Cargar documentos"
+                            (actionClicked)="deleteFile($event)"
+                            (linkClicked)="donwloadErrorsPdf()"
+                            [isDisabledBtnLoad]="(numFilesErrors!==0 || loadingFile)"
+                    ></bdb-ml-upload>
+                    <div class="continueButton">
+                        <button class='bdb-at-btn  bdb-at-btn--primary bdb-at-btn--lg '
+                                [routerLink]="environmentAgreements" [disabled]="!(numFilesErrors===0 && data.length>0 && !loadingFile)">
+                                Crear archivo único<span>›</span>
+                        </button>
+                        
+                    </div>  
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+

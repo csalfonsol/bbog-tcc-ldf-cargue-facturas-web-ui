@@ -1,0 +1,106 @@
+.content {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 0px;
+    max-width: 1200px;
+    flex-direction: column;
+    align-items: left;
+    //margin-top: var(--sherpa-spacing-5);
+    
+
+    .text-1 {
+        font-stretch: normal;
+        font-style: normal;
+        margin-top: var(--sherpa-spacing-3);
+    }
+    .text-11{
+        width: 100%;
+        height: 24px;
+        letter-spacing: -0.0269231px;
+        color: #5C5C5C;
+        margin-top: var(--sherpa-spacing-8);
+    }
+
+    .text-2{
+        width: 568px;
+        height: 28px;
+        letter-spacing: -0.0346154px;
+        color: #333333;
+        margin-top: 3px;
+    }
+    .text-3{
+        width: 1200px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: -0.03px;
+        color: #5C5C5C;
+        margin-top: var(--sherpa-spacing-2);
+        margin-bottom: 0px;
+    }
+    .table {
+        width: 1200px;
+        margin-top: 0%;
+    }
+
+}
+
+.contenedor-flexbox {
+    display: flex; /*Convertimos al menú en flexbox*/
+    justify-content: space-between; /*Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda*/
+    align-items: center; /*con esto alineamos de manera vertical*/
+    width: 1200px;
+}
+.text-body1{
+    margin: 0px;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    
+    letter-spacing: -0.0307692px;
+    
+    color: #5C5C5C;
+
+    flex: none;
+    flex-grow: 0;
+}
+.text-info1{
+    margin: 0px;
+    margin-top: var(--sherpa-spacing-8);
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: -0.0269231px;
+
+    color: #5C5C5C;
+
+    flex: none;
+    flex-grow: 0;
+}
+.title-1{
+    margin: 0px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height, or 117% */
+
+    letter-spacing: -0.0346154px;
+
+    /* Grises/Carbon-900 */
+
+    color: #333333;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    flex-grow: 0;
+}

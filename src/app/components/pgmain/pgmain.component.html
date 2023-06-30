@@ -1,0 +1,60 @@
+<div class="sherpa-grid">
+    <div class="sherpa-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+                <div class="banner-view" *ngIf="ratesCharged && dataComponent.getUpdateRate()">
+                    <bdb-at-alert 
+                        #bannerRate
+                        type="SUCCESS"
+                        alert-title="¡Actualizamos las tasas de hoy satisfactoriamente!" 
+                        description="Continúa con el segundo paso." 
+                        close-button=true
+                        (alertClosedEvent)="closeBanner($event)">
+                    </bdb-at-alert>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+                <div class="main">
+                    <div class="text-1" *ngIf="!dataComponent.getUpdateRate()">
+                        <div class="sherpa-typography-body-2">Fecha a procesar {{ dateHoy | date: 'dd/MM/yyyy' }}</div>
+                    </div>
+                    <div class="text-2" *ngIf="!dataComponent.getUpdateRate()">
+                        <div class="sherpa-typography-heading-5">Te damos la bienvenida</div>
+                    </div>
+                    <div class="text-3">
+                        <div class="sherpa-typography-body-1">Sigue estos pasos para crear el archivo
+                            único de facturas, ten en cuenta que debes contar con la información de tus clientes: </div>
+                    </div>
+                      
+                    <div class="rectangle">
+                        <!-- tasas no cargadas -->
+                        <bdb-ml-multi-action 
+                            *ngIf="!ratesCharged" 
+                            [valuesToCard]='[{"desc": "Ingresa las tasas DTF y IBR", "icon" : "ico-write-edit", "title" : "1. Actualiza las tasas",
+                                            "value": "0"}, {"title" : "  2. Carga los documento del cliente", "desc": "Adjunta las facturas a endosar", 
+                                            "icon" : "ico-document-plus", "isDisabled":(invoiceDisabled).toString(), "value": "1"}]' 
+                            (cardClicked)="cargarTasas($event)">
+                        </bdb-ml-multi-action>
+
+                        <!-- tasas cargadas -->
+                        <bdb-ml-multi-action 
+                            *ngIf="ratesCharged" 
+                            [valuesToCard]='[{"desc": "Ingresa las tasas DTF y IBR", "icon" : "ico-write-edit", "title" : "1. Actualiza las tasas", 
+                                            "tag" : {"text" : "Completado"},"value": "0"}, {"title" : "  2. Carga los documentos del cliente", "desc": "Adjunta las facturas a endosar", 
+                                            "icon" : "ico-document-plus", "isDisabled":(!invoiceDisabled).toString(), "value": "1"}]' 
+                            (cardClicked)="cargarTasas($event)">
+                        </bdb-ml-multi-action>
+                                  
+                        <bdb-at-interactive-tag 
+                            is-solid="false"
+                            type="success"
+                            style="display:none;" 
+                            text=Positivo>
+                        </bdb-at-interactive-tag>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

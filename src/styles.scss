@@ -1,0 +1,11 @@
+$font-family-path: "~@npm-bbta/bbog-dig-dt-webcomponents-lib/dist/collection";
+@import "@npm-bbta/bbog-dig-dt-webcomponents-lib/dist/collection/assets/fonts/fonts.scss";
+$icons-path: "~@npm-bbta/bbog-dig-dt-webcomponents-lib/dist/collection"; 
+@import "@npm-bbta/bbog-dig-dt-webcomponents-lib/dist/collection/assets/fonts/icons.scss";
+
+body,
+    html {
+        height: 768px;
+        padding: 0 0 216px;
+        background-color: #f6f8fa!important;
+    }

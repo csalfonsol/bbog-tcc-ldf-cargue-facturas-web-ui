@@ -1,0 +1,1753 @@
+
+$icons-path: '' !default;
+
+@font-face {
+    font-family: 'bdb-icons';
+    src: url('#{$icons-path}/assets/fonts/icons/bdb-icons.eot?4u9hg8');
+    src: url('#{$icons-path}/assets/fonts/icons/bdb-icons.eot?4u9hg8#iefix') format('embedded-opentype'),
+     // url('#{$icons-path}/assets/fonts/icons/bdb-icons.ttf?4u9hg8') format('truetype'),
+      url('#{$icons-path}/assets/fonts/icons/bdb-icons.woff?4u9hg8') format('woff');
+     //url('#{$icons-path}/assets/fonts/icons/bdb-icons.svg?4u9hg8#ibdb-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="ico-"], [class*=" ico-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-size: 32px;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .ico-invoice-line:before {
+    content: "\ead5";
+  }
+  .ico-liquidity:before {
+    content: "\ead6";
+  }
+  .ico-rediscount:before {
+    content: "\ead7";
+  }
+  .ico-sustainability:before {
+    content: "\ead8";
+  }
+  .ico-overdraft:before {
+    content: "\ead9";
+  }
+  .ico-trade-credit:before {
+    content: "\eada";
+  }
+  .ico-no-walk:before {
+    content: "\eadb";
+  }
+  .ico-disabled-brain:before {
+    content: "\eadc";
+  }
+  .ico-temporarily-disabled:before {
+    content: "\eadd";
+  }
+  .ico-no-listen:before {
+    content: "\eade";
+  }
+  .ico-no-view:before {
+    content: "\eadf";
+  }
+  .ico-retencion-cliente:before {
+    content: "\ead4";
+  }
+  .ico-transfiya .path1:before {
+    content: "\eac7";
+    color: rgb(0, 47, 135);
+  }
+  .ico-transfiya .path2:before {
+    content: "\eac8";
+    margin-left: -1em;
+    color: rgb(0, 47, 135);
+  }
+  .ico-transfiya .path3:before {
+    content: "\eac9";
+    margin-left: -1em;
+    color: rgb(0, 47, 135);
+  }
+  .ico-transfiya .path4:before {
+    content: "\eaca";
+    margin-left: -1em;
+    color: rgb(0, 47, 135);
+  }
+  .ico-transfiya .path5:before {
+    content: "\eacb";
+    margin-left: -1em;
+    color: rgb(0, 47, 135);
+  }
+  .ico-transfiya .path6:before {
+    content: "\eacc";
+    margin-left: -1em;
+    color: rgb(0, 47, 135);
+  }
+  .ico-transfiya .path7:before {
+    content: "\eacd";
+    margin-left: -1em;
+    color: rgb(0, 47, 135);
+  }
+  .ico-transfiya .path8:before {
+    content: "\eace";
+    margin-left: -1em;
+    color: rgb(0, 47, 135);
+  }
+  .ico-transfiya .path9:before {
+    content: "\eacf";
+    margin-left: -1em;
+    color: rgb(0, 47, 135);
+  }
+  .ico-transfiya .path10:before {
+    content: "\ead0";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+  }
+  .ico-transfiya .path11:before {
+    content: "\ead1";
+    margin-left: -1em;
+    color: rgb(255, 158, 24);
+  }
+  .ico-transfiya .path12:before {
+    content: "\ead2";
+    margin-left: -1em;
+    color: rgb(255, 183, 27);
+  }
+  .ico-recargas:before {
+    content: "\ead3";
+  }
+  .ico-folder:before {
+    content: "\eac6";
+  }
+  .ico-favorite-fill:before {
+    content: "\eac3";
+  }
+  .ico-favorite:before {
+    content: "\eac4";
+  }
+  .ico-reload:before {
+    content: "\eac5";
+  }
+  .ico-facilpass-sigla .path1:before {
+    content: "\ea49";
+    color: rgb(0, 183, 0);
+  }
+  .ico-facilpass-sigla .path2:before {
+    content: "\eab8";
+    margin-left: -1em;
+    color: rgb(0, 51, 224);
+  }
+  .ico-facilpass .path1:before {
+    content: "\eab9";
+    color: rgb(0, 51, 224);
+  }
+  .ico-facilpass .path2:before {
+    content: "\eaba";
+    margin-left: -4.3173828125em;
+    color: rgb(0, 51, 224);
+  }
+  .ico-facilpass .path3:before {
+    content: "\eabb";
+    margin-left: -4.3173828125em;
+    color: rgb(0, 51, 224);
+  }
+  .ico-facilpass .path4:before {
+    content: "\eabc";
+    margin-left: -4.3173828125em;
+    color: rgb(0, 51, 224);
+  }
+  .ico-facilpass .path5:before {
+    content: "\eabd";
+    margin-left: -4.3173828125em;
+    color: rgb(0, 51, 224);
+  }
+  .ico-facilpass .path6:before {
+    content: "\eabe";
+    margin-left: -4.3173828125em;
+    color: rgb(0, 183, 0);
+  }
+  .ico-facilpass .path7:before {
+    content: "\eabf";
+    margin-left: -4.3173828125em;
+    color: rgb(0, 183, 0);
+  }
+  .ico-facilpass .path8:before {
+    content: "\eac0";
+    margin-left: -4.3173828125em;
+    color: rgb(0, 183, 0);
+  }
+  .ico-facilpass .path9:before {
+    content: "\eac1";
+    margin-left: -4.3173828125em;
+    color: rgb(0, 183, 0);
+  }
+  .ico-transfers:before {
+    content: "\eac2";
+  }
+  .ico-closeview:before {
+    content: "\e9eb";
+  }
+  .ico-delete:before {
+    content: "\e937";
+  }
+  .ico-portfolio-purchase:before {
+    content: "\eab3";
+  }
+  .ico-credits:before {
+    content: "\eab4";
+  }
+  .ico-credit-cancel:before {
+    content: "\eab5";
+  }
+  .ico-liquidez:before {
+    content: "\eab6";
+  }
+  .ico-cartera:before {
+    content: "\eab7";
+  }
+  .ico-add-delete:before {
+    content: "\e92d";
+  }
+  .ico-libre-destino:before {
+    content: "\e923";
+  }
+  .ico-adelanto-de-nomina:before {
+    content: "\e900";
+  }
+  .ico-black-visa .path1:before {
+    content: "\eab1";
+    color: rgb(51, 51, 51);
+  }
+  .ico-black-visa .path2:before {
+    content: "\eab2";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-adquirencias:before {
+    content: "\e901";
+  }
+  .ico-alcancias:before {
+    content: "\e902";
+  }
+  .ico-applepay:before {
+    content: "\e903";
+  }
+  .ico-applepayone .path1:before {
+    content: "\e904";
+    color: rgb(51, 51, 51);
+  }
+  .ico-applepayone .path2:before {
+    content: "\e905";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-applepayone .path3:before {
+    content: "\e906";
+    margin-left: -1em;
+    color: rgb(51, 51, 51);
+  }
+  .ico-applepayone .path4:before {
+    content: "\e907";
+    margin-left: -1em;
+    color: rgb(51, 51, 51);
+  }
+  .ico-applepayone .path5:before {
+    content: "\e908";
+    margin-left: -1em;
+    color: rgb(51, 51, 51);
+  }
+  .ico-applepayone .path6:before {
+    content: "\e909";
+    margin-left: -1em;
+    color: rgb(51, 51, 51);
+  }
+  .ico-applepayone .path7:before {
+    content: "\e90a";
+    margin-left: -1em;
+    color: rgb(51, 51, 51);
+  }
+  .ico-applepaytwo:before {
+    content: "\e90b";
+  }
+  .ico-autenticacion-pj:before {
+    content: "\e90c";
+  }
+  .ico-autenticacion-pn:before {
+    content: "\e90d";
+  }
+  .ico-banca-movil:before {
+    content: "\e90e";
+  }
+  .ico-banca-virtual:before {
+    content: "\e90f";
+  }
+  .ico-bnpl:before {
+    content: "\e910";
+  }
+  .ico-cdts:before {
+    content: "\e911";
+  }
+  .ico-crediconvenio:before {
+    content: "\e912";
+  }
+  .ico-crediservice:before {
+    content: "\e913";
+  }
+  .ico-credit-bussiness:before {
+    content: "\e914";
+  }
+  .ico-credit-consumo:before {
+    content: "\e915";
+  }
+  .ico-credit-rotary:before {
+    content: "\e916";
+  }
+  .ico-credit-student:before {
+    content: "\e917";
+  }
+  .ico-credito-vehiculo:before {
+    content: "\e918";
+  }
+  .ico-credito-vivienda:before {
+    content: "\e919";
+  }
+  .ico-creditos-y-microcreditos:before {
+    content: "\e91a";
+  }
+  .ico-cuenta-afc:before {
+    content: "\e91b";
+  }
+  .ico-cuenta-corriente:before {
+    content: "\e91c";
+  }
+  .ico-cuenta-de-ahorros:before {
+    content: "\e91d";
+  }
+  .ico-down-payment:before {
+    content: "\e91e";
+  }
+  .ico-e-commerce:before {
+    content: "\e91f";
+  }
+  .ico-fiducias:before {
+    content: "\e920";
+  }
+  .ico-leasing:before {
+    content: "\e921";
+  }
+  .ico-libranzas:before {
+    content: "\e922";
+  }
+  .ico-links:before {
+    content: "\e924";
+  }
+  .ico-omnicanalidad:before {
+    content: "\e925";
+  }
+  .ico-pfm:before {
+    content: "\e926";
+  }
+  .ico-portal-empresas:before {
+    content: "\e927";
+  }
+  .ico-primera-compra:before {
+    content: "\e928";
+  }
+  .ico-pse:before {
+    content: "\e929";
+  }
+  .ico-pymes:before {
+    content: "\e92a";
+  }
+  .ico-seguros:before {
+    content: "\e92b";
+  }
+  .ico-tc:before {
+    content: "\e92c";
+  }
+  .ico-add-large:before {
+    content: "\e92e";
+  }
+  .ico-add:before {
+    content: "\e92f";
+  }
+  .ico-arrow-back-bm:before {
+    content: "\e930";
+  }
+  .ico-arrow-back:before {
+    content: "\e931";
+  }
+  .ico-arrow-down:before {
+    content: "\e932";
+  }
+  .ico-arrow-next:before {
+    content: "\e933";
+  }
+  .ico-arrow-up:before {
+    content: "\e934";
+  }
+  .ico-bar-code:before {
+    content: "\e935";
+  }
+  .ico-close:before {
+    content: "\e936";
+  }
+  .ico-download:before {
+    content: "\e938";
+  }
+  .ico-expand:before {
+    content: "\e939";
+  }
+  .ico-info:before {
+    content: "\e93a";
+  }
+  .ico-light-off:before {
+    content: "\e93b";
+  }
+  .ico-light-on .path1:before {
+    content: "\e93c";
+    color: rgb(51, 51, 51);
+  }
+  .ico-light-on .path2:before {
+    content: "\e93d";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-light-on .path3:before {
+    content: "\e93e";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-light-on .path4:before {
+    content: "\e93f";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-light-on .path5:before {
+    content: "\e940";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-loader .path1:before {
+    content: "\e941";
+    color: rgb(0, 0, 0);
+  }
+  .ico-loader .path2:before {
+    content: "\e942";
+    margin-left: -1em;
+    color: rgb(51, 51, 51);
+  }
+  .ico-login:before {
+    content: "\e943";
+  }
+  .ico-logout:before {
+    content: "\e944";
+  }
+  .ico-menu:before {
+    content: "\e945";
+  }
+  .ico-new-scan:before {
+    content: "\e946";
+  }
+  .ico-options:before {
+    content: "\e947";
+  }
+  .ico-qr-code:before {
+    content: "\e948";
+  }
+  .ico-qr-scan:before {
+    content: "\e949";
+  }
+  .ico-qr-transfer:before {
+    content: "\e94a";
+  }
+  .ico-question-help:before {
+    content: "\e94b";
+  }
+  .ico-question:before {
+    content: "\e94c";
+  }
+  .ico-remove:before {
+    content: "\e94d";
+  }
+  .ico-retract:before {
+    content: "\e94e";
+  }
+  .ico-scan-pay:before {
+    content: "\e94f";
+  }
+  .ico-scan-simple:before {
+    content: "\e950";
+  }
+  .ico-share:before {
+    content: "\e951";
+  }
+  .ico-token-active:before {
+    content: "\e952";
+  }
+  .ico-token-inactive:before {
+    content: "\e953";
+  }
+  .ico-token-pending:before {
+    content: "\e954";
+  }
+  .ico-transfer:before {
+    content: "\e955";
+  }
+  .ico-upload:before {
+    content: "\e956";
+  }
+  .ico-zoom-in:before {
+    content: "\e957";
+  }
+  .ico-zoom-out:before {
+    content: "\e958";
+  }
+  .ico-av-villas .path1:before {
+    content: "\e959";
+    color: rgb(0, 57, 152);
+  }
+  .ico-av-villas .path2:before {
+    content: "\e95a";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-av-villas .path3:before {
+    content: "\e95b";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-black-mastercard .path1:before {
+    content: "\e95c";
+    color: rgb(51, 51, 51);
+  }
+  .ico-black-mastercard .path2:before {
+    content: "\e95d";
+    margin-left: -1em;
+    color: rgb(255, 94, 0);
+  }
+  .ico-black-mastercard .path3:before {
+    content: "\e95e";
+    margin-left: -1em;
+    color: rgb(237, 0, 6);
+  }
+  .ico-black-mastercard .path4:before {
+    content: "\e95f";
+    margin-left: -1em;
+    color: rgb(249, 160, 0);
+  }
+  .ico-bogota .path1:before {
+    content: "\e960";
+    color: rgb(255, 190, 0);
+  }
+  .ico-bogota .path2:before {
+    content: "\e961";
+    margin-left: -1em;
+    color: rgb(205, 50, 50);
+  }
+  .ico-bogota .path3:before {
+    content: "\e962";
+    margin-left: -1em;
+    color: rgb(255, 190, 0);
+  }
+  .ico-card-visa .path1:before {
+    content: "\e963";
+    color: rgb(92, 139, 204);
+  }
+  .ico-card-visa .path2:before {
+    content: "\e964";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-claro:before {
+    content: "\e965";
+    color: #cc2229;
+  }
+  .ico-clasica-mastercard .path1:before {
+    content: "\e966";
+    color: rgb(0, 64, 168);
+  }
+  .ico-clasica-mastercard .path2:before {
+    content: "\e967";
+    margin-left: -1em;
+    color: rgb(255, 95, 0);
+  }
+  .ico-clasica-mastercard .path3:before {
+    content: "\e968";
+    margin-left: -1em;
+    color: rgb(235, 0, 27);
+  }
+  .ico-clasica-mastercard .path4:before {
+    content: "\e969";
+    margin-left: -1em;
+    color: rgb(247, 158, 27);
+  }
+  .ico-clasica-mastercard .path5:before {
+    content: "\e96a";
+    margin-left: -1em;
+    color: rgb(247, 158, 27);
+  }
+  .ico-clasica-visa .path1:before {
+    content: "\e96b";
+    color: rgb(0, 64, 168);
+  }
+  .ico-clasica-visa .path2:before {
+    content: "\e96c";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-debito-mastercard .path1:before {
+    content: "\e96d";
+    color: rgb(255, 255, 255);
+  }
+  .ico-debito-mastercard .path2:before {
+    content: "\e96e";
+    margin-left: -1em;
+    color: rgb(92, 139, 204);
+  }
+  .ico-debito-mastercard .path3:before {
+    content: "\e96f";
+    margin-left: -1em;
+    color: rgb(255, 94, 0);
+  }
+  .ico-debito-mastercard .path4:before {
+    content: "\e970";
+    margin-left: -1em;
+    color: rgb(237, 0, 6);
+  }
+  .ico-debito-mastercard .path5:before {
+    content: "\e971";
+    margin-left: -1em;
+    color: rgb(249, 160, 0);
+  }
+  .ico-debitomastercard .path1:before {
+    content: "\e972";
+    color: rgb(92, 139, 204);
+  }
+  .ico-debitomastercard .path2:before {
+    content: "\e973";
+    margin-left: -1em;
+    color: rgb(255, 94, 0);
+  }
+  .ico-debitomastercard .path3:before {
+    content: "\e974";
+    margin-left: -1em;
+    color: rgb(237, 0, 6);
+  }
+  .ico-debitomastercard .path4:before {
+    content: "\e975";
+    margin-left: -1em;
+    color: rgb(249, 160, 0);
+  }
+  .ico-eaab:before {
+    content: "\e976";
+    color: #008fd8;
+  }
+  .ico-enel:before {
+    content: "\e977";
+    color: #ff1065;
+  }
+  .ico-essa:before {
+    content: "\e978";
+  }
+  .ico-etb:before {
+    content: "\e979";
+    color: #008fd8;
+  }
+  .ico-gdo .path1:before {
+    content: "\e97a";
+    color: rgb(0, 143, 216);
+  }
+  .ico-gdo .path2:before {
+    content: "\e97b";
+    margin-left: -1em;
+    color: rgb(0, 143, 216);
+  }
+  .ico-gdo .path3:before {
+    content: "\e97c";
+    margin-left: -1em;
+    color: rgb(0, 143, 216);
+  }
+  .ico-gdo .path4:before {
+    content: "\e97d";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+  }
+  .ico-gdo .path5:before {
+    content: "\e97e";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+  }
+  .ico-gold-mastercard .path1:before {
+    content: "\e97f";
+    color: rgb(176, 151, 89);
+  }
+  .ico-gold-mastercard .path2:before {
+    content: "\e980";
+    margin-left: -1em;
+    color: rgb(255, 94, 0);
+  }
+  .ico-gold-mastercard .path3:before {
+    content: "\e981";
+    margin-left: -1em;
+    color: rgb(237, 0, 6);
+  }
+  .ico-gold-mastercard .path4:before {
+    content: "\e982";
+    margin-left: -1em;
+    color: rgb(249, 160, 0);
+  }
+  .ico-gold-visa .path1:before {
+    content: "\e983";
+    color: rgb(176, 151, 89);
+  }
+  .ico-gold-visa .path2:before {
+    content: "\e984";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-infinite-mastercard .path1:before {
+    content: "\e985";
+    color: rgb(0, 44, 118);
+  }
+  .ico-infinite-mastercard .path2:before {
+    content: "\e986";
+    margin-left: -1em;
+    color: rgb(255, 94, 0);
+  }
+  .ico-infinite-mastercard .path3:before {
+    content: "\e987";
+    margin-left: -1em;
+    color: rgb(237, 0, 6);
+  }
+  .ico-infinite-mastercard .path4:before {
+    content: "\e988";
+    margin-left: -1em;
+    color: rgb(249, 160, 0);
+  }
+  .ico-infinite-visa .path1:before {
+    content: "\e989";
+    color: rgb(0, 44, 118);
+  }
+  .ico-infinite-visa .path2:before {
+    content: "\e98a";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-master-blue .path1:before {
+    content: "\e98b";
+    color: rgb(28, 131, 225);
+  }
+  .ico-master-blue .path2:before {
+    content: "\e98c";
+    margin-left: -1em;
+    color: rgb(255, 95, 0);
+  }
+  .ico-master-blue .path3:before {
+    content: "\e98d";
+    margin-left: -1em;
+    color: rgb(235, 0, 27);
+  }
+  .ico-master-blue .path4:before {
+    content: "\e98e";
+    margin-left: -1em;
+    color: rgb(247, 158, 27);
+  }
+  .ico-master-blue .path5:before {
+    content: "\e98f";
+    margin-left: -1em;
+    color: rgb(247, 158, 27);
+  }
+  .ico-master-green .path1:before {
+    content: "\e990";
+    color: rgb(96, 204, 77);
+  }
+  .ico-master-green .path2:before {
+    content: "\e991";
+    margin-left: -1em;
+    color: rgb(255, 95, 0);
+  }
+  .ico-master-green .path3:before {
+    content: "\e992";
+    margin-left: -1em;
+    color: rgb(235, 0, 27);
+  }
+  .ico-master-green .path4:before {
+    content: "\e993";
+    margin-left: -1em;
+    color: rgb(247, 158, 27);
+  }
+  .ico-master-green .path5:before {
+    content: "\e994";
+    margin-left: -1em;
+    color: rgb(247, 158, 27);
+  }
+  .ico-master-purple .path1:before {
+    content: "\e995";
+    color: rgb(176, 87, 160);
+  }
+  .ico-master-purple .path2:before {
+    content: "\e996";
+    margin-left: -1em;
+    color: rgb(255, 95, 0);
+  }
+  .ico-master-purple .path3:before {
+    content: "\e997";
+    margin-left: -1em;
+    color: rgb(235, 0, 27);
+  }
+  .ico-master-purple .path4:before {
+    content: "\e998";
+    margin-left: -1em;
+    color: rgb(247, 158, 27);
+  }
+  .ico-master-purple .path5:before {
+    content: "\e999";
+    margin-left: -1em;
+    color: rgb(247, 158, 27);
+  }
+  .ico-master-red .path1:before {
+    content: "\e99a";
+    color: rgb(242, 58, 49);
+  }
+  .ico-master-red .path2:before {
+    content: "\e99b";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-master-red .path3:before {
+    content: "\e99c";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-master-red .path4:before {
+    content: "\e99d";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-master-solid:before {
+    content: "\e99e";
+    color: #858585;
+  }
+  .ico-master-yellow .path1:before {
+    content: "\e99f";
+    color: rgb(253, 193, 48);
+  }
+  .ico-master-yellow .path2:before {
+    content: "\e9a0";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-master-yellow .path3:before {
+    content: "\e9a1";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-master-yellow .path4:before {
+    content: "\e9a2";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-master .path1:before {
+    content: "\e9a3";
+    color: rgb(255, 255, 255);
+  }
+  .ico-master .path2:before {
+    content: "\e9a4";
+    margin-left: -1em;
+    color: rgb(255, 95, 0);
+  }
+  .ico-master .path3:before {
+    content: "\e9a5";
+    margin-left: -1em;
+    color: rgb(235, 0, 27);
+  }
+  .ico-master .path4:before {
+    content: "\e9a6";
+    margin-left: -1em;
+    color: rgb(247, 158, 27);
+  }
+  .ico-master .path5:before {
+    content: "\e9a7";
+    margin-left: -1em;
+    color: rgb(247, 158, 27);
+  }
+  .ico-movistar:before {
+    content: "\e9a8";
+    color: #00abe1;
+  }
+  .ico-occidente:before {
+    content: "\e9a9";
+    color: #0081ff;
+  }
+  .ico-platinum-black .path1:before {
+    content: "\e9aa";
+    color: rgb(51, 51, 51);
+  }
+  .ico-platinum-black .path2:before {
+    content: "\e9ab";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-platinum-mastercard .path1:before {
+    content: "\e9ac";
+    color: rgb(133, 133, 133);
+  }
+  .ico-platinum-mastercard .path2:before {
+    content: "\e9ad";
+    margin-left: -1em;
+    color: rgb(255, 94, 0);
+  }
+  .ico-platinum-mastercard .path3:before {
+    content: "\e9ae";
+    margin-left: -1em;
+    color: rgb(237, 0, 6);
+  }
+  .ico-platinum-mastercard .path4:before {
+    content: "\e9af";
+    margin-left: -1em;
+    color: rgb(249, 160, 0);
+  }
+  .ico-platinum-visa .path1:before {
+    content: "\e9b0";
+    color: rgb(133, 133, 133);
+  }
+  .ico-platinum-visa .path2:before {
+    content: "\e9b1";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-popular:before {
+    content: "\e9b2";
+    color: #00a80c;
+  }
+  .ico-tigo:before {
+    content: "\e9b3";
+    color: #00377b;
+  }
+  .ico-vanti .path1:before {
+    content: "\e9b4";
+    color: rgb(249, 210, 72);
+  }
+  .ico-vanti .path2:before {
+    content: "\e9b5";
+    margin-left: -1em;
+    color: rgb(20, 46, 83);
+  }
+  .ico-vanti .path3:before {
+    content: "\e9b6";
+    margin-left: -1em;
+    color: rgb(20, 46, 83);
+  }
+  .ico-vanti .path4:before {
+    content: "\e9b7";
+    margin-left: -1em;
+    color: rgb(20, 46, 83);
+  }
+  .ico-vanti .path5:before {
+    content: "\e9b8";
+    margin-left: -1em;
+    color: rgb(20, 46, 83);
+  }
+  .ico-vanti .path6:before {
+    content: "\e9b9";
+    margin-left: -1em;
+    color: rgb(20, 46, 83);
+  }
+  .ico-vanti .path7:before {
+    content: "\e9ba";
+    margin-left: -1em;
+    color: rgb(20, 46, 83);
+  }
+  .ico-virgin:before {
+    content: "\e9bb";
+    color: #cc2229;
+  }
+  .ico-visa-blue .path1:before {
+    content: "\e9bc";
+    color: rgb(28, 131, 225);
+  }
+  .ico-visa-blue .path2:before {
+    content: "\e9bd";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-visa-green .path1:before {
+    content: "\e9be";
+    color: rgb(96, 204, 77);
+  }
+  .ico-visa-green .path2:before {
+    content: "\e9bf";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-visa-pruple .path1:before {
+    content: "\e9c0";
+    color: rgb(176, 87, 160);
+  }
+  .ico-visa-pruple .path2:before {
+    content: "\e9c1";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-visa-red .path1:before {
+    content: "\e9c2";
+    color: rgb(242, 58, 49);
+  }
+  .ico-visa-red .path2:before {
+    content: "\e9c3";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-visa-yellow .path1:before {
+    content: "\e9c4";
+    color: rgb(253, 193, 48);
+  }
+  .ico-visa-yellow .path2:before {
+    content: "\e9c5";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .ico-visa .path1:before {
+    content: "\e9c6";
+    color: rgb(255, 255, 255);
+  }
+  .ico-visa .path2:before {
+    content: "\e9c7";
+    margin-left: -1em;
+    color: rgb(26, 31, 113);
+  }
+  .ico-wom:before {
+    content: "\e9c8";
+    color: #612d8a;
+  }
+  .ico-accessibility:before {
+    content: "\e9c9";
+  }
+  .ico-administration-expenses:before {
+    content: "\e9ca";
+  }
+  .ico-advisory-services:before {
+    content: "\e9cb";
+  }
+  .ico-avartars-profile-settings:before {
+    content: "\e9cc";
+  }
+  .ico-avatar-generic:before {
+    content: "\e9cd";
+  }
+  .ico-avatar-man:before {
+    content: "\e9ce";
+  }
+  .ico-avatar-transfer:before {
+    content: "\e9cf";
+  }
+  .ico-avatar-woman:before {
+    content: "\e9d0";
+  }
+  .ico-award:before {
+    content: "\e9d1";
+  }
+  .ico-bank-references:before {
+    content: "\e9d2";
+  }
+  .ico-beauty:before {
+    content: "\e9d3";
+  }
+  .ico-bell-mute:before {
+    content: "\e9d4";
+  }
+  .ico-bell:before {
+    content: "\e9d5";
+  }
+  .ico-business-sales:before {
+    content: "\e9d6";
+  }
+  .ico-calendar-check:before {
+    content: "\e9d7";
+  }
+  .ico-calendar-default:before {
+    content: "\e9d8";
+  }
+  .ico-calendar-download:before {
+    content: "\e9d9";
+  }
+  .ico-calendar-fail:before {
+    content: "\e9da";
+  }
+  .ico-calendar-info:before {
+    content: "\e9db";
+  }
+  .ico-calendar-lock:before {
+    content: "\e9dc";
+  }
+  .ico-calendar-time:before {
+    content: "\e9dd";
+  }
+  .ico-call-center:before {
+    content: "\e9de";
+  }
+  .ico-camera:before {
+    content: "\e9df";
+  }
+  .ico-card-id:before {
+    content: "\e9e0";
+  }
+  .ico-checklist:before {
+    content: "\e9e1";
+  }
+  .ico-close-hand:before {
+    content: "\e9e2";
+  }
+  .ico-close-view:before {
+    content: "\e9e3";
+  }
+  .ico-clothing:before {
+    content: "\e9e4";
+  }
+  .ico-congelar:before {
+    content: "\e9e5";
+  }
+  .ico-connected:before {
+    content: "\e9e6";
+  }
+  .ico-contact:before {
+    content: "\e9e7";
+  }
+  .ico-cursor-hand:before {
+    content: "\e9e8";
+  }
+  .ico-dashboard-browser:before {
+    content: "\e9e9";
+  }
+  .ico-dashboard-layout:before {
+    content: "\e9ea";
+  }
+  .ico-delivery:before {
+    content: "\e9ec";
+  }
+  .ico-digital-shift:before {
+    content: "\e9ed";
+  }
+  .ico-disconnected:before {
+    content: "\e9ee";
+  }
+  .ico-document-check:before {
+    content: "\e9ef";
+  }
+  .ico-document-download:before {
+    content: "\e9f0";
+  }
+  .ico-document-fail:before {
+    content: "\e9f1";
+  }
+  .ico-document-image:before {
+    content: "\e9f2";
+  }
+  .ico-document-plus:before {
+    content: "\e9f3";
+  }
+  .ico-document-services:before {
+    content: "\e9f4";
+  }
+  .ico-document-statements:before {
+    content: "\e9f5";
+  }
+  .ico-document-transfer:before {
+    content: "\e9f6";
+  }
+  .ico-document-upload:before {
+    content: "\e9f7";
+  }
+  .ico-documents-certificates:before {
+    content: "\e9f8";
+  }
+  .ico-documents-services:before {
+    content: "\e9f9";
+  }
+  .ico-documents-statements:before {
+    content: "\e9fa";
+  }
+  .ico-documents-transfer:before {
+    content: "\e9fb";
+  }
+  .ico-documents:before {
+    content: "\e9fc";
+  }
+  .ico-email-check:before {
+    content: "\e9fd";
+  }
+  .ico-email-document:before {
+    content: "\e9fe";
+  }
+  .ico-email-fail:before {
+    content: "\e9ff";
+  }
+  .ico-email-lock:before {
+    content: "\ea00";
+  }
+  .ico-email-open:before {
+    content: "\ea01";
+  }
+  .ico-email:before {
+    content: "\ea02";
+  }
+  .ico-energy:before {
+    content: "\ea03";
+  }
+  .ico-entertainment:before {
+    content: "\ea04";
+  }
+  .ico-excel:before {
+    content: "\ea05";
+  }
+  .ico-face-cam:before {
+    content: "\ea06";
+  }
+  .ico-facebook:before {
+    content: "\ea07";
+  }
+  .ico-fireworks:before {
+    content: "\ea08";
+  }
+  .ico-food:before {
+    content: "\ea09";
+  }
+  .ico-form-check:before {
+    content: "\ea0a";
+  }
+  .ico-form-error:before {
+    content: "\ea0b";
+  }
+  .ico-form-pencil:before {
+    content: "\ea0c";
+  }
+  .ico-gas:before {
+    content: "\ea0d";
+  }
+  .ico-graduate:before {
+    content: "\ea0e";
+  }
+  .ico-hand:before {
+    content: "\ea0f";
+  }
+  .ico-health:before {
+    content: "\ea10";
+  }
+  .ico-home:before {
+    content: "\ea11";
+  }
+  .ico-image:before {
+    content: "\ea12";
+  }
+  .ico-instagram:before {
+    content: "\ea13";
+  }
+  .ico-international-shopping:before {
+    content: "\ea14";
+  }
+  .ico-internet:before {
+    content: "\ea15";
+  }
+  .ico-job:before {
+    content: "\ea16";
+  }
+  .ico-limit:before {
+    content: "\ea17";
+  }
+  .ico-link-attachment:before {
+    content: "\ea18";
+  }
+  .ico-link-hyperlink:before {
+    content: "\ea19";
+  }
+  .ico-look:before {
+    content: "\ea1a";
+  }
+  .ico-messenger:before {
+    content: "\ea1b";
+  }
+  .ico-military:before {
+    content: "\ea1c";
+  }
+  .ico-national-shopping:before {
+    content: "\ea1d";
+  }
+  .ico-navigation-gift:before {
+    content: "\ea1e";
+  }
+  .ico-open-hand:before {
+    content: "\ea1f";
+  }
+  .ico-open-view:before {
+    content: "\ea20";
+  }
+  .ico-padlock-lock:before {
+    content: "\ea21";
+  }
+  .ico-padlock-unlock:before {
+    content: "\ea22";
+  }
+  .ico-passport:before {
+    content: "\ea23";
+  }
+  .ico-password-approved:before {
+    content: "\ea24";
+  }
+  .ico-password-denied:before {
+    content: "\ea25";
+  }
+  .ico-password-lock:before {
+    content: "\ea26";
+  }
+  .ico-pdf:before {
+    content: "\ea27";
+  }
+  .ico-pencil-edit:before {
+    content: "\ea28";
+  }
+  .ico-pensioner:before {
+    content: "\ea29";
+  }
+  .ico-pfm-home:before {
+    content: "\ea2a";
+  }
+  .ico-print:before {
+    content: "\ea2b";
+  }
+  .ico-read-search:before {
+    content: "\ea2c";
+  }
+  .ico-receipt:before {
+    content: "\ea2d";
+  }
+  .ico-recommendations:before {
+    content: "\ea2e";
+  }
+  .ico-replace:before {
+    content: "\ea2f";
+  }
+  .ico-screenreader:before {
+    content: "\ea30";
+  }
+  .ico-search:before {
+    content: "\ea31";
+  }
+  .ico-select-cursor:before {
+    content: "\ea32";
+  }
+  .ico-settings:before {
+    content: "\ea33";
+  }
+  .ico-shopping-cart:before {
+    content: "\ea34";
+  }
+  .ico-shopping:before {
+    content: "\ea35";
+  }
+  .ico-start-full:before {
+    content: "\ea36";
+  }
+  .ico-start:before {
+    content: "\ea37";
+  }
+  .ico-time:before {
+    content: "\ea38";
+  }
+  .ico-tools:before {
+    content: "\ea39";
+  }
+  .ico-transfer1:before {
+    content: "\ea3a";
+  }
+  .ico-travel:before {
+    content: "\ea3b";
+  }
+  .ico-ubication-map:before {
+    content: "\ea3c";
+  }
+  .ico-ubication-office:before {
+    content: "\ea3d";
+  }
+  .ico-ubication-pin:before {
+    content: "\ea3e";
+  }
+  .ico-updatebalances:before {
+    content: "\ea3f";
+  }
+  .ico-water:before {
+    content: "\ea40";
+  }
+  .ico-whatsapp:before {
+    content: "\ea41";
+  }
+  .ico-write-edit:before {
+    content: "\ea42";
+  }
+  .ico-abonos-trans-cuentas:before {
+    content: "\ea43";
+  }
+  .ico-accounting-document:before {
+    content: "\ea44";
+  }
+  .ico-accounting-email-invoice:before {
+    content: "\ea45";
+  }
+  .ico-accounting-email-nvoice:before {
+    content: "\ea46";
+  }
+  .ico-accounting-invoice-card:before {
+    content: "\ea47";
+  }
+  .ico-accounting-invoice:before {
+    content: "\ea48";
+  }
+  .ico-adjustments-and-news:before {
+    content: "\ea4a";
+  }
+  .ico-advance-card:before {
+    content: "\ea4b";
+  }
+  .ico-amt-bill:before {
+    content: "\ea4c";
+  }
+  .ico-atm-bill:before {
+    content: "\ea4d";
+  }
+  .ico-atm-card:before {
+    content: "\ea4e";
+  }
+  .ico-atm:before {
+    content: "\ea4f";
+  }
+  .ico-avatars-generic:before {
+    content: "\ea50";
+  }
+  .ico-bank-investment:before {
+    content: "\ea51";
+  }
+  .ico-bank:before {
+    content: "\ea52";
+  }
+  .ico-bell-mute1:before {
+    content: "\ea53";
+  }
+  .ico-bills:before {
+    content: "\ea54";
+  }
+  .ico-calculator:before {
+    content: "\ea55";
+  }
+  .ico-card-check:before {
+    content: "\ea56";
+  }
+  .ico-card-fail:before {
+    content: "\ea57";
+  }
+  .ico-card-lock:before {
+    content: "\ea58";
+  }
+  .ico-card:before {
+    content: "\ea59";
+  }
+  .ico-cards:before {
+    content: "\ea5a";
+  }
+  .ico-cash-bag:before {
+    content: "\ea5b";
+  }
+  .ico-cash-bill:before {
+    content: "\ea5c";
+  }
+  .ico-cash-check:before {
+    content: "\ea5d";
+  }
+  .ico-cash-coin:before {
+    content: "\ea5e";
+  }
+  .ico-check-card:before {
+    content: "\ea5f";
+  }
+  .ico-coin-bills:before {
+    content: "\ea60";
+  }
+  .ico-coins:before {
+    content: "\ea61";
+  }
+  .ico-comparative-comparativo:before {
+    content: "\ea62";
+  }
+  .ico-fail-card:before {
+    content: "\ea63";
+  }
+  .ico-financial-obligations:before {
+    content: "\ea64";
+  }
+  .ico-franchise-master .path1:before {
+    content: "\ea65";
+    color: rgb(255, 94, 0);
+  }
+  .ico-franchise-master .path2:before {
+    content: "\ea66";
+    margin-left: -1em;
+    color: rgb(237, 0, 6);
+  }
+  .ico-franchise-master .path3:before {
+    content: "\ea67";
+    margin-left: -1em;
+    color: rgb(249, 160, 0);
+  }
+  .ico-franchise-visa:before {
+    content: "\ea68";
+    color: #1a1f71;
+  }
+  .ico-interest-dividends:before {
+    content: "\ea69";
+  }
+  .ico-interests-card:before {
+    content: "\ea6a";
+  }
+  .ico-investment:before {
+    content: "\ea6b";
+  }
+  .ico-lock-card:before {
+    content: "\ea6c";
+  }
+  .ico-management-fee-card:before {
+    content: "\ea6d";
+  }
+  .ico-money-bag:before {
+    content: "\ea6e";
+  }
+  .ico-money-bills:before {
+    content: "\ea6f";
+  }
+  .ico-money-coin-bills:before {
+    content: "\ea70";
+  }
+  .ico-money-money:before {
+    content: "\ea71";
+  }
+  .ico-money:before {
+    content: "\ea72";
+  }
+  .ico-new-card:before {
+    content: "\ea73";
+  }
+  .ico-notification-bell:before {
+    content: "\ea74";
+  }
+  .ico-pay:before {
+    content: "\ea75";
+  }
+  .ico-payments-cash-bag:before {
+    content: "\ea76";
+  }
+  .ico-payments-cash-coin:before {
+    content: "\ea77";
+  }
+  .ico-payments-dian-taxes:before {
+    content: "\ea78";
+  }
+  .ico-payments-distrital-taxes:before {
+    content: "\ea79";
+  }
+  .ico-payments-donations:before {
+    content: "\ea7a";
+  }
+  .ico-payments-new-credit:before {
+    content: "\ea7b";
+  }
+  .ico-payments-outlay:before {
+    content: "\ea7c";
+  }
+  .ico-payments-planilla:before {
+    content: "\ea7d";
+  }
+  .ico-payments-taxes:before {
+    content: "\ea7e";
+  }
+  .ico-percentage:before {
+    content: "\ea7f";
+  }
+  .ico-pfm-otros:before {
+    content: "\ea80";
+  }
+  .ico-pfm-transfer:before {
+    content: "\ea81";
+  }
+  .ico-qr-transfer1:before {
+    content: "\ea82";
+  }
+  .ico-rates:before {
+    content: "\ea83";
+  }
+  .ico-saving:before {
+    content: "\ea84";
+  }
+  .ico-savings-and-investment:before {
+    content: "\ea85";
+  }
+  .ico-transfer2:before {
+    content: "\ea86";
+  }
+  .ico-wallet-open:before {
+    content: "\ea87";
+  }
+  .ico-wallet:before {
+    content: "\ea88";
+  }
+  .ico-error .path1:before {
+    content: "\ea89";
+    position: absolute;
+    color: rgb(242, 58, 49);
+  }
+  .ico-error .path2:before {
+    content: "\ea8a";
+    position: absolute;
+    color: rgb(255, 255, 255);
+  }
+  .ico-error .path3:before {
+    content: "\ea8b";
+    position: relative;
+    color: rgb(255, 255, 255);
+  }
+  .ico-information .path1:before {
+    content: "\ea8c";
+    position: absolute;
+    color: rgb(28, 131, 225);
+  }
+  .ico-information .path2:before {
+    content: "\ea8d";
+    position: absolute;
+    color: rgb(255, 255, 255);
+  }
+  .ico-information .path3:before {
+    content: "\ea8e";
+    position: relative;
+    color: rgb(255, 255, 255);
+  }
+  .ico-success .path1:before {
+    content: "\ea8f";
+    position: absolute;
+    color: rgb(75, 183, 51);
+  }
+  .ico-success .path2:before {
+    content: "\ea90";
+    position: relative;
+    color: rgb(255, 255, 255);
+  }
+  .ico-warning .path1:before {
+    content: "\ea91";
+    position: absolute;
+    color: rgb(246, 155, 49);
+  }
+  .ico-warning .path2:before {
+    content: "\ea92";
+    position: absolute;
+    color: rgb(255, 255, 255);
+  }
+  .ico-warning .path3:before {
+    content: "\ea93";
+    position: absolute;
+    color: rgb(255, 255, 255);
+  }
+  .ico-warning .path4:before {
+    content: "\ea94";
+    position: relative;
+    color: rgb(255, 255, 255);
+  }
+  .ico-demo:before {
+    content: "\ea95";
+  }
+  .ico-desktop:before {
+    content: "\ea96";
+  }
+  .ico-frequent--questions:before {
+    content: "\ea97";
+  }
+  .ico-frequent-questions:before {
+    content: "\ea98";
+  }
+  .ico-internet-shop:before {
+    content: "\ea99";
+  }
+  .ico-laptop:before {
+    content: "\ea9a";
+  }
+  .ico-loading:before {
+    content: "\ea9b";
+  }
+  .ico-mobile-card:before {
+    content: "\ea9c";
+  }
+  .ico-mobile-geolocation:before {
+    content: "\ea9d";
+  }
+  .ico-mobile-lock:before {
+    content: "\ea9e";
+  }
+  .ico-mobile-notification:before {
+    content: "\ea9f";
+  }
+  .ico-mobile-phone:before {
+    content: "\eaa0";
+  }
+  .ico-mobile-sms:before {
+    content: "\eaa1";
+  }
+  .ico-mobile-transfer:before {
+    content: "\eaa2";
+  }
+  .ico-mobile-vibration:before {
+    content: "\eaa3";
+  }
+  .ico-phone:before {
+    content: "\eaa4";
+  }
+  .ico-receive-money:before {
+    content: "\eaa5";
+  }
+  .ico-send-money:before {
+    content: "\eaa6";
+  }
+  .ico-cam-id:before {
+    content: "\eaa7";
+  }
+  .ico-face-id:before {
+    content: "\eaa8";
+  }
+  .ico-face-man:before {
+    content: "\eaa9";
+  }
+  .ico-face-woman:before {
+    content: "\eaaa";
+  }
+  .ico-touch-check:before {
+    content: "\eaab";
+  }
+  .ico-touch-fail:before {
+    content: "\eaac";
+  }
+  .ico-touch-id:before {
+    content: "\eaad";
+  }
+  .ico-touch-keyboard:before {
+    content: "\eaae";
+  }
+  .ico-touch:before {
+    content: "\eaaf";
+  }
+  .ico-voice-id:before {
+    content: "\eab0";
+  }

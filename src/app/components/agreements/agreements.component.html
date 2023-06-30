@@ -1,0 +1,33 @@
+<div class="sherpa-grid">
+    <div class="sherpa-container">
+        <div class="row">
+            <bdb-ml-loader *ngIf="modalLoader" #loader is-open="true" [textLabel]="txtLoader"
+                [type]="typeLoader"></bdb-ml-loader>
+            <div class="content">
+                <div class="contenedor-flexbox">
+                    <div>
+                        <p class="text-info1 sherpa-typography-body-2">Fecha a procesar {{dateToday | date: 'dd/MM/yyyy'}}</p>
+                        <p class="title-1 sherpa-typography-heading-5 ">Visualización de los convenios</p>
+                        <p class="text-body1 sherpa-typography-body-1">
+                            Aquí puedes ver las condiciones de las facturas de los clientes para la gestión con el RADIAN:</p>        
+                    </div>
+                    <div style="width:20%; display:inline-block;">
+                        <button class='bdb-at-btn  bdb-at-btn--primary bdb-at-btn--lg ' (click)="calculate()">Continuar<span>›</span></button>
+                    </div>
+                </div>
+                <div class='table'>
+                    <bdb-ml-dynamic-table class='' #dynamicTable id="dynamicTable" column-table='[ 
+                                            {"colName":"Número de facturas", "control":"text"},
+                                            {"colName":"Proveedor", "control":"text"},
+                                            {"colName":"Deudor", "control":"text"},
+                                            {"colName":"Tipo de Tasa", "control":"text"},
+                                            {"colName":"Tasa/Spread", "control":"text"},
+                                            {"colName":"Ejecución del desembolso", "control":"text"},
+                                            {"colName":"Plazo Convenio", "control":"text"}
+                                            ]'>
+                    </bdb-ml-dynamic-table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

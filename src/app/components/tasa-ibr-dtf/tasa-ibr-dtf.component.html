@@ -1,0 +1,76 @@
+
+
+<div class="skeleton-content sherpa-grid" *ngIf="showComponent" >
+    <div class="sherpa-container">
+        <div class="row">    
+            <div class="content">
+                <div class="banner-toast" *ngIf="tasasCargadas && showToast">
+                    <bdb-at-alert type="INFO" alert-title ="Las tasas de hoy ya se encuentran registradas" 
+                    description="Continue si necesitas editar los campos nuevamente." close-button=true
+                    (alertClosedEvent)="closeBanner()"></bdb-at-alert>
+                </div>
+                <div class="rectangle">
+                    <p class="text-info1 sherpa-typography-body-2" *ngIf="!showToast">Fecha a procesar {{dateToday | date: 'dd/MM/yyyy'}}</p> 
+                    <p class="sherpa-typography-heading-5 title-1" *ngIf="!showToast">Actualización de tasas</p>
+                    <p class="text-body1 sherpa-typography-body-1">Completa los siguientes campos, ten en cuenta incluir el punto para separar decimales:</p> 
+                    <div condicional>
+                        <div class="input-box" *ngFor="let tasa of objectRates; let i = index">
+                            <bdb-at-input  [id]=tasa.name [label]=tasa.name placeholder="Digite la tasa (%)" type="TEXT" [status]=tasa.status ngDefaultControl [(ngModel)]=tasa.text 
+                            (keyup)="validarPorcentaje($event)" (blur)="blurEvent($event,i)" (focus)="validarPorcentaje($event)"
+                            required="true" [message]=tasa.txtMsg ></bdb-at-input>
+                        <br>
+                        </div>
+                        <button id="btnSave" type="submit" class='rectangleBtn bdb-at-btn  bdb-at-btn--primary bdb-at-btn--lg ' [disabled]="!enableBtnGuardar" (click)="BtnAceptar()">
+                            Guardar<span>›</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="sherpa-grid" *ngIf="showSkeleton" >
+    <div class="sherpa-container">
+        <div class="row">    
+            <div class="content">
+                <div class="skeleton-loading card-items"> 
+                    <div class="card "> 
+                        <div class="bar-1">
+                            <bdb-at-skeleton></bdb-at-skeleton>
+                        </div> 
+                        <div class="bar-2">
+                            <bdb-at-skeleton></bdb-at-skeleton>
+                        </div> 
+                        <div class="bar-3">
+                            <bdb-at-skeleton></bdb-at-skeleton>
+                        </div> 
+                        <div class="bar-4">
+                            <bdb-at-skeleton></bdb-at-skeleton>
+                        </div> 
+                        <div *ngFor="let tasa of objectRates; let i = index">
+                            <div class="bar-label">
+                                <bdb-at-skeleton></bdb-at-skeleton>
+                            </div> 
+                            <div class="box-rate"> 
+                                <div class="bar-rate">
+                                    <bdb-at-skeleton></bdb-at-skeleton>
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="bar-buttom">
+                            <bdb-at-skeleton></bdb-at-skeleton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,167 @@
+
+.content {
+    width: 100%;
+    display: flex;
+    margin: 0 auto 32px;
+    padding: 0 16px;
+    max-width: 888px;
+    flex-direction: column;
+    align-items: center;
+
+    .banner-toast {
+        width: 800px;
+        height: 80px;
+        align-items: center;
+        margin: 0px;
+        margin-top: 17px;
+        margin-bottom: 9px;
+    }
+    .text-1{
+        width: 592px;
+        height: 54px;
+        font-stretch: normal;
+        font-style: normal;
+        margin: var(--sherpa-spacing-3) 384px 46px;
+        text-align: center;
+    }
+    .rectangle {
+        width: 540px;
+        height: 48px;
+    }
+
+    .rectangleBtn {
+        width: 123px;
+        height: 48px;
+        margin: 0px;
+        margin-top: 14px;
+    }
+    .contenedor-div {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+
+.input-box{
+    margin: 0px;
+    margin-top: 6px;
+}
+.text-body1{
+    margin: 0px;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    
+    letter-spacing: -0.0307692px;
+    
+    color: #5C5C5C;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.text-info1{
+    margin: 0px;
+    margin-top: var(--sherpa-spacing-8);
+    margin-bottom: var(--sherpa-spacing-2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: -0.0269231px;
+
+    color: #5C5C5C;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.title-1{
+    margin: 0px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height, or 117% */
+
+    letter-spacing: -0.0346154px;
+
+    /* Grises/Carbon-900 */
+
+    color: #333333;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.bar-1{ 
+    width: 190px; 
+    height: 14px;
+    border-radius: 40px; 
+} 
+.bar-2{ 
+    margin-top: 8px;
+    width: 391px; 
+    height: 28px; 
+    border-radius: 40px;
+} 
+.bar-3{ 
+    margin-top: 19px;
+    width: 568px;
+    height: 16px; 
+    border-radius: 40px;
+}
+.bar-4{ 
+    margin-top: 7px;
+    width: 81px; 
+    height: 16px; 
+    border-radius: 40px;
+ } 
+.bar-rate{ 
+    margin-left: 15px;
+    width: 148px;
+    height: 13px;
+    border-radius: 40px;
+} 
+.box-rate{ 
+    background-color:rgba(255, 255, 255, 1); 
+    margin-top: 16px; 
+    padding-top: 15px;
+    width: 568px; 
+    height: 33px; 
+    border-radius: 1px;
+} 
+
+.bar-label{ 
+    margin-top: 29px;
+    width: 62px;
+    height: 11px;
+    border-radius: 40px; 
+} 
+
+.bar-buttom{ 
+    margin-top: 32px;
+    width: 130px;
+    height: 48px; 
+    border-radius: 40px;
+} 
+
+.card { 
+    width: 540px; 
+    padding: 40px; 
+    margin: 50px; 
+    margin-top: 0px; 
+    border-radius: 10px; 
+    flex-basis: 100%; 
+} 

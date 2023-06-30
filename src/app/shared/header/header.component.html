@@ -1,0 +1,18 @@
+<bdb-ml-header 
+    (backBtnClicked)="goBack()"   
+    button-label="true" 
+    button-left="Volver" 
+    button-right="Salida segura"  
+    buttons-actions="3" 
+    [back]='(String(!hidenBtnBack).toUpperCase())' 
+    close='TRUE'>
+</bdb-ml-header>
+
+<bdb-ml-modal #modal 
+is-close
+    icon="information" 
+    (buttonAlertClicked)="btnModal($event)"
+    [titleModal]="titleModal"
+    [subTitle]= "messageModal"
+    options-buttons='[{"id":"0","value":"Si, continuar"}, {"id":"1","value":"No, cancelar"}]'> 
+</bdb-ml-modal>
